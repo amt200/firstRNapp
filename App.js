@@ -25,7 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
-  console.log('I am a console statement.');
+  console.log('Welcome to C308 Lesson 04 quiz!\nYour component here');
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -41,33 +41,11 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Recommended Eats @ RP</Text>
-              <Text style={styles.sectionDescription}>
-                <Text style={styles.highlight}>Sweet Tooth Waffles</Text> has waffles with cornflakes and chocolate spread, other than usual fillings such as kaya and
-                peanut butter.
+              <Text style={styles.sectionTitle}>Set Pickup Time</Text>
+              <Text style={styles.sectionDescription}>Set a time you would like us to arrive at pickup location
               </Text>
-              <Text style={styles.highlight}>W6 level 3</Text>
+              <Text style={styles.description}><Text style={styles.highlight}>RP Furniture Shop</Text></Text>
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Dylan gives up</Text>
-              <Text style={styles.sectionDescription}>
-                So the lecturer told him to hang in there and cry for a while.
-              </Text>
-              <Text style={styles.highlight}>W64N 3:30 PM</Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -89,10 +67,6 @@ const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
-  },
-  makeBold: {
-    color: Colors.black,
-    fontWeight: '600'
   },
   sectionTitle: {
     fontSize: 24,
