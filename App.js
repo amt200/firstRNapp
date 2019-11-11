@@ -51,7 +51,7 @@ const App: () => React$Node = () => {
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Dylan gives up</Text>
               <Text style={styles.sectionDescription}>
-                So the lecturer told me to hang in there and cry for a while.
+                So the lecturer told him to hang in there and cry for a while.
               </Text>
               <Text style={styles.highlight}>W64N 3:30 PM</Text>
             </View>
