@@ -25,6 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
+  console.log('I am a console statement.');
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -40,18 +41,19 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text>Welcome to C308</Text>
-              <Text style={styles.sectionTitle}>Step One</Text>
+              <Text style={styles.sectionTitle}>Recommended Eats @ RP</Text>
               <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
+                <Text style={styles.highlight}>Sweet Tooth Waffles</Text> has waffles with cornflakes and chocolate spread, other than usual fillings such as kaya and
+                peanut butter.
               </Text>
+              <Text style={styles.highlight}>W6 level 3</Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
+              <Text style={styles.sectionTitle}>Dylan gives up</Text>
               <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
+                So the lecturer told me to hang in there and cry for a while.
               </Text>
+              <Text style={styles.highlight}>W64N 3:30 PM</Text>
             </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Debug</Text>
@@ -87,6 +89,10 @@ const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
+  },
+  makeBold: {
+    color: Colors.black,
+    fontWeight: '600'
   },
   sectionTitle: {
     fontSize: 24,
